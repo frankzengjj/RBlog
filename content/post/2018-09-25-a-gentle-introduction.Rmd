@@ -1,0 +1,11 @@
+---
+title: A Gentle Introduction
+author: Frank Zeng
+date: '2018-09-25'
+slug: a-gentle-introduction
+categories:
+  - R
+tags:
+  - R Markdown
+---
+
