@@ -1,11 +1,11 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo website"
-theme = "kiera"
-pygmentsCodeFences = true
-googleAnalytics = ""
-disqusShortname = ""
+title = "Study • Life • Code"
+theme = "themes/jane"
+#googleAnalytics = ""
+#disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+#defaultContentLanguage = "zh-cn"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -15,13 +15,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "/about/"
 [[menu.main]]
     name = "GitHub"
-    url = "https://github.com/rstudio/blogdown"
+    url = "https://github.com/frankzengjj"
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/tianyu-zeng-552603114/"
+
+#[Languages.zh-cn]
+#  languageCode = "zh-cn"
 
 [params]
-    description = "A minimal Hugo theme"
+    description = "Study"
     replaceGoogleFonts = "fonts.loli.net"
     twitter = "example"
     facebook = "example"
