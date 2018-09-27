@@ -6,10 +6,21 @@
     <description>Recent content on Study • Life • Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      
+        <description>This is my blog built with R and blogdown.</description>
+      
+    </item>
     
     <item>
       <title>A Gentle Introduction</title>
@@ -18,7 +29,9 @@
       
       <guid>/2018/09/25/a-gentle-introduction/</guid>
       
-        <description></description>
+        <description>This is a blog that I will use to share my study notes and life.
+My name is Tianyu Zeng (曾天昱) or I can go by Frank. I was born in Shanghai, China and currently a senior student of University of Wisconsin - Madion, majoring in computer science and statistics.
+I have a strong intest in statistics/machine learning and back-end software development. Thus, I would like to share some thoughts and knowledge that I learned from the class and books.</description>
       
     </item>
     
@@ -30,17 +43,6 @@
       <guid>/2018/09/25/test/</guid>
       
         <description>测试中文  </description>
-      
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      
-        <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
       
     </item>
     

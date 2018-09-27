@@ -7,5 +7,15 @@ categories:
   - R
 tags:
   - R Markdown
+  
+# 用户自定义
+#reward: true	 # 关闭打赏
+mathjax: true    # 打开 mathjax
 ---
+
+This is a blog that I will use to share my study notes and life.
+
+My name is Tianyu Zeng (曾天昱) or I can go by Frank. I was born in Shanghai, China and currently a senior student of University of Wisconsin - Madion, majoring in computer science and statistics.
+
+I have a strong intest in statistics/machine learning and back-end software development. Thus, I would like to share some thoughts and knowledge that I learned from the class and books. So I wil include some theories as well as coding regarding my favorite topics.
 
