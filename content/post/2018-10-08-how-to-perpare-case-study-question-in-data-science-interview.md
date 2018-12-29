@@ -1,8 +1,8 @@
 ---
-title: How to Perpare Product Questions in Data Science Interview
+title: How to Prepare Product Questions in Data Science Interview
 author: Frank Zeng
 date: '2018-10-08'
-slug: how-to-perpare-case-study-question-in-data-science-interview
+slug: how-to-prepare-case-study-question-in-data-science-interview
 categories: [Interview]
 tags:
   - Data Science
