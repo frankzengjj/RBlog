@@ -1,0 +1,33 @@
+---
+title: "Does CEO Pay Matter?"
+author: "Tianyu Zeng"
+date: '2018-12-29'
+contentCopyright: no
+description: ''
+keywords: []
+lastmod: '2018-12-29T22:18:35+08:00'
+mathjax: yes
+reward: no
+slug: does-ceo-pay-matter
+tags:
+- Data Science
+- Statistics
+categories:
+- R
+- Data Science
+---
+
+## Abstract
+The government of United States of American now request all public companies to disclose their data about salary of CEOs and median employees. The information is valuable because U.S. citizens and job seekers may know which companies devote themselves to creating more job opportunities. In this report, we analyzed the dataset that was scraped from AFL-CIO, wikipedia, and Yahoo Finance, which contained salaries for CEOs and median employees, revenue in 2017, number of employees, education of CEOs, and so on. Then, we applied various multivariate analysis techniques, including Principle Component Analysis, Cluster Analysis, Canonical Correlation Analysis, etc. We were motivated to explore how various companies paid their employees differently and whether there are information suggest that CEO salary and median worker salary may vary together. The result revealed that Consumer Discretionary companies were more likely to pay employees and CEOs less than other companies. Moreover, particularly communication services companies paid their CEOs and employees better other companies but their revenue was not highest at the same time. Finally, we discovered that Walmart dominated over all other companies when it comes to revenue and employees. However, it did not pay its CEO and median workers higher than other companies even though the revenue was highest. Finally, some weakness regarding the sample size was discussed at the end of the report to elaborate more about drawing a conclusive interpretation.
+
+## Introduction
+For the first time, U.S. Securities and Exchange Commision adopted Dodd-Frank Act and required domestic public companies to disclose the compensation of CEOs, CFOs, and other executives. Moreover, the clear disclosure about pay ratios between the CEOs and median employees are required by the government so that the public is able to compare how companies pay their CEOs with their workers. This dataset is intriguing because it was the initial data that companies provided for their first fiscal year beginning on or after Jan. 1, 2017. Thus, it is convenient for the society to investigate which companies are creating high-wage positions.
+
+In addition, companies with high CEO-to-worker pay ratios may suffer from a winner-take-all philosophy where the pay ratio gap between CEOs and median workers is significant. Employee productivity, teamwork and collaboration suffer when workers see that their CEO’s pay is going up at the same time that they are asked to do more with less.
+
+Our motivation was that finding a good company with promising future is essential for the job seekers. Thus, we wish to study the relationship between companies influence the median workers salary. Particularly, it was important to know in advance which industry tend to pay employees better so that the pay ratio between CEOs and employees could be smaller.
+
+In the next sections, we applied and conducted several multivariate analysis methods on the dataset we scraped and compiled from the Internet. Methods, such as Principle Component Analysis, Cluster Analysis, and Canonical Correlation Analysis, were justified before applying on the dataset. The following table provided the information regarding the variables. Noted that the dimension of the dataset was 98 $\times$ 8.
+
+![some alt text](/Users/user/Desktop/stat/stat456/project/pics/single_link.png)
+

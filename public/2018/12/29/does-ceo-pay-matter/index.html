@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Does CEO Pay Matter? - Study • Life • Code</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Tianyu Zeng" />
+  <meta name="description" content="Abstract The government of United States of American now request all public companies to disclose their data about salary of CEOs and median employees. The information is valuable because U.S. citizens and job seekers may know which companies devote themselves to creating more job opportunities. In this report, we analyzed the dataset that was scraped from AFL-CIO, wikipedia, and Yahoo Finance, which contained salaries for CEOs and median employees, revenue in 2017, number of employees, education of CEOs, and so on." />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.49" />
+
+
+<link rel="canonical" href="/2018/12/29/does-ceo-pay-matter/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Does CEO Pay Matter?" />
+<meta property="og:description" content="Abstract The government of United States of American now request all public companies to disclose their data about salary of CEOs and median employees. The information is valuable because U.S. citizens and job seekers may know which companies devote themselves to creating more job opportunities. In this report, we analyzed the dataset that was scraped from AFL-CIO, wikipedia, and Yahoo Finance, which contained salaries for CEOs and median employees, revenue in 2017, number of employees, education of CEOs, and so on." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2018/12/29/does-ceo-pay-matter/" /><meta property="article:published_time" content="2018-12-29T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-12-29T22:18:35&#43;08:00"/>
+
+<meta itemprop="name" content="Does CEO Pay Matter?">
+<meta itemprop="description" content="Abstract The government of United States of American now request all public companies to disclose their data about salary of CEOs and median employees. The information is valuable because U.S. citizens and job seekers may know which companies devote themselves to creating more job opportunities. In this report, we analyzed the dataset that was scraped from AFL-CIO, wikipedia, and Yahoo Finance, which contained salaries for CEOs and median employees, revenue in 2017, number of employees, education of CEOs, and so on.">
+
+
+<meta itemprop="datePublished" content="2018-12-29T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-12-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="507">
+
+
+
+<meta itemprop="keywords" content="Data Science,Statistics," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Does CEO Pay Matter?"/>
+<meta name="twitter:description" content="Abstract The government of United States of American now request all public companies to disclose their data about salary of CEOs and median employees. The information is valuable because U.S. citizens and job seekers may know which companies devote themselves to creating more job opportunities. In this report, we analyzed the dataset that was scraped from AFL-CIO, wikipedia, and Yahoo Finance, which contained salaries for CEOs and median employees, revenue in 2017, number of employees, education of CEOs, and so on."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-126634481-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Study • Life • Code</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/about/">About</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://github.com/frankzengjj" rel="noopener" target="_blank">
+              GitHub
+              <i class="iconfont icon-new-window"></i>
+            </a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.linkedin.com/in/tianyu-zeng-552603114/" rel="noopener" target="_blank">
+              Linkedin
+              <i class="iconfont icon-new-window"></i>
+            </a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/tianyuzeng-resume.pdf">Resume</a>
+          
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Study • Life • Code
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/about/">About</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://github.com/frankzengjj" rel="noopener" target="_blank">
+              GitHub
+            <i class="iconfont icon-new-window"></i>
+            </a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.linkedin.com/in/tianyu-zeng-552603114/" rel="noopener" target="_blank">
+              Linkedin
+            <i class="iconfont icon-new-window"></i>
+            </a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/tianyuzeng-resume.pdf">Resume</a>
+          
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Does CEO Pay Matter?</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> 2018-12-29 </span>
+        <div class="post-category">
+            <a href="/categories/r/"> R </a>
+            <a href="/categories/data-science/"> Data Science </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<p>The government of United States of American now request all public companies to disclose their data about salary of CEOs and median employees. The information is valuable because U.S. citizens and job seekers may know which companies devote themselves to creating more job opportunities. In this report, we analyzed the dataset that was scraped from AFL-CIO, wikipedia, and Yahoo Finance, which contained salaries for CEOs and median employees, revenue in 2017, number of employees, education of CEOs, and so on. Then, we applied various multivariate analysis techniques, including Principle Component Analysis, Cluster Analysis, Canonical Correlation Analysis, etc. We were motivated to explore how various companies paid their employees differently and whether there are information suggest that CEO salary and median worker salary may vary together. The result revealed that Consumer Discretionary companies were more likely to pay employees and CEOs less than other companies. Moreover, particularly communication services companies paid their CEOs and employees better other companies but their revenue was not highest at the same time. Finally, we discovered that Walmart dominated over all other companies when it comes to revenue and employees. However, it did not pay its CEO and median workers higher than other companies even though the revenue was highest. Finally, some weakness regarding the sample size was discussed at the end of the report to elaborate more about drawing a conclusive interpretation.</p>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>For the first time, U.S. Securities and Exchange Commision adopted Dodd-Frank Act and required domestic public companies to disclose the compensation of CEOs, CFOs, and other executives. Moreover, the clear disclosure about pay ratios between the CEOs and median employees are required by the government so that the public is able to compare how companies pay their CEOs with their workers. This dataset is intriguing because it was the initial data that companies provided for their first fiscal year beginning on or after Jan. 1, 2017. Thus, it is convenient for the society to investigate which companies are creating high-wage positions.</p>
+<p>In addition, companies with high CEO-to-worker pay ratios may suffer from a winner-take-all philosophy where the pay ratio gap between CEOs and median workers is significant. Employee productivity, teamwork and collaboration suffer when workers see that their CEO’s pay is going up at the same time that they are asked to do more with less.</p>
+<p>Our motivation was that finding a good company with promising future is essential for the job seekers. Thus, we wish to study the relationship between companies influence the median workers salary. Particularly, it was important to know in advance which industry tend to pay employees better so that the pay ratio between CEOs and employees could be smaller.</p>
+<p>In the next sections, we applied and conducted several multivariate analysis methods on the dataset we scraped and compiled from the Internet. Methods, such as Principle Component Analysis, Cluster Analysis, and Canonical Correlation Analysis, were justified before applying on the dataset. The following table provided the information regarding the variables. Noted that the dimension of the dataset was 98 <span class="math inline">\(\times\)</span> 8.</p>
+<div class="figure">
+<img src="/Users/user/Desktop/stat/stat456/project/pics/single_link.png" alt="some alt text" />
+<p class="caption">some alt text</p>
+</div>
+</div>
+
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/data-science/">Data Science</a>
+          <a href="/tags/statistics/">Statistics</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/2018/10/08/how-to-prepare-case-study-question-in-data-science-interview/">
+            <span class="next-text nav-default">How to Prepare Product Questions in Data Science Interview</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  <a href="/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+       -
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
